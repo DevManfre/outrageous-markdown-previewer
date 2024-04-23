@@ -23,6 +23,15 @@ $markdown-margin: 30px;
 
         .col {
             border: solid 1px black;
+
+            h4{
+                padding: 10px;
+            }
+
+            #editor,
+            input {
+                width: 100%;
+            }
         }
     }
 }

@@ -16,4 +16,11 @@
 }
 #root .markdown-container .col {
   border: solid 1px black;
+}
+#root .markdown-container .col h4 {
+  padding: 10px;
+}
+#root .markdown-container .col #editor,
+#root .markdown-container .col input {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
