@@ -15,36 +15,47 @@ body {
                 margin: 0;
             }
 
-            p {
+            a {
+                text-decoration: none;
+                color: black;
                 margin: 0;
+            }
 
-                a {
-                    text-decoration: none;
-                }
+            a:hover {
+                text-decoration: underline;
             }
         }
 
         .markdown-container {
-            padding: $markdown-margin;
+            padding: 0 $markdown-margin $markdown-margin $markdown-margin;
             gap: calc($markdown-margin / 2);
 
             .col {
-                border: solid 1px black;
                 height: min-content;
 
-                hr {
+                h4.title {
+                    text-align: center;
+                    padding: 10px;
                     margin: 0;
                 }
 
-                h4 {
-                    padding: 10px;
-                    margin: 0;
+                .markdown {
+                    border-radius: 24px;
+                    padding: 16px;
                 }
 
                 #editor {
                     width: 100%;
                     min-height: 60vh;
                     resize: none;
+                    background-color: #3b3b3b;
+                    color: #fff;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 15px;
+                }
+
+                #preview {
+                    background-color: #F5F5F5;
                 }
             }
         }
