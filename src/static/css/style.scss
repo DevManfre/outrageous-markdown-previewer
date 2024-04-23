@@ -26,11 +26,12 @@ $markdown-margin: 30px;
 
             h4{
                 padding: 10px;
+                margin: 0;
             }
 
-            #editor,
-            input {
+            textarea {
                 width: 100%;
+                min-height: 50vh;
             }
         }
     }

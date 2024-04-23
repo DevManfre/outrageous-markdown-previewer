@@ -19,8 +19,9 @@
 }
 #root .markdown-container .col h4 {
   padding: 10px;
+  margin: 0;
 }
-#root .markdown-container .col #editor,
-#root .markdown-container .col input {
+#root .markdown-container .col textarea {
   width: 100%;
+  min-height: 50vh;
 }/*# sourceMappingURL=style.css.map */
