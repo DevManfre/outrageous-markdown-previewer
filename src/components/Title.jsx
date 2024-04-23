@@ -2,7 +2,7 @@ function Title() {
     return (
         <div className='title'>
             <h1>Markdown Previewer</h1>
-            <p>by <a href="https://github.com/DevManfre">DevManfre</a></p>
+            <a href="https://github.com/DevManfre">by DevManfre</a>
         </div>
     );
 }

@@ -11,30 +11,40 @@ body #root .title {
 body #root .title h1 {
   margin: 0;
 }
-body #root .title p {
+body #root .title a {
+  text-decoration: none;
+  color: black;
   margin: 0;
 }
-body #root .title p a {
-  text-decoration: none;
+body #root .title a:hover {
+  text-decoration: underline;
 }
 body #root .markdown-container {
-  padding: 30px;
+  padding: 0 30px 30px 30px;
   gap: 15px;
 }
 body #root .markdown-container .col {
-  border: solid 1px black;
   height: -moz-min-content;
   height: min-content;
 }
-body #root .markdown-container .col hr {
-  margin: 0;
-}
-body #root .markdown-container .col h4 {
+body #root .markdown-container .col h4.title {
+  text-align: center;
   padding: 10px;
   margin: 0;
+}
+body #root .markdown-container .col .markdown {
+  border-radius: 24px;
+  padding: 16px;
 }
 body #root .markdown-container .col #editor {
   width: 100%;
   min-height: 60vh;
   resize: none;
+  background-color: #3b3b3b;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+body #root .markdown-container .col #preview {
+  background-color: #F5F5F5;
 }/*# sourceMappingURL=style.css.map */

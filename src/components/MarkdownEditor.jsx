@@ -25,17 +25,16 @@ function MarkdownEditor() {
     return (
         <div className="row markdown-container">
             <div className="col">
-                <h4><i className="bi bi-file-code"> </i>Editor</h4>
-                <textarea id='editor' value={editorText} onInput={handleEditorChange} />
+                <h4 className="title"><i className="bi bi-file-code"> </i>Editor</h4>
+                <textarea id='editor' spellcheck="false" className="markdown" value={editorText} onInput={handleEditorChange} />
             </div>
             <div className="col">
-                <h4><i className="bi bi-file-earmark"> </i>Preview</h4>
-                <hr/>
-                <span id="preview">
+                <h4 className="title"><i className="bi bi-file-earmark"> </i>Preview</h4>
+                <div id="preview" className="markdown">
                     <ReactMarkdown>
                         {editorText}
                     </ReactMarkdown>
-                </span>
+                </div>
             </div>
         </div>
     );
