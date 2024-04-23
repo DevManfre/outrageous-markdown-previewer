@@ -1,43 +1,51 @@
 $markdown-margin: 30px;
 
-#root {
-    .title {
-        text-align: center;
+::-webkit-scrollbar {
+    display: none;
+}
 
-        h1 {
-            margin: 0;
-        }
+body {
+    overflow-x: hidden;
 
-        p {
-            margin: 0;
+    #root {
+        .title {
+            text-align: center;
 
-            a {
-                text-decoration: none;
-            }
-        }
-    }
-
-    .markdown-container {
-        padding: $markdown-margin;
-        gap: calc($markdown-margin / 2);
-
-        .col {
-            border: solid 1px black;
-            height: min-content;
-
-            hr {
+            h1 {
                 margin: 0;
             }
 
-            h4{
-                padding: 10px;
+            p {
                 margin: 0;
-            }
 
-            #editor {
-                width: 100%;
-                min-height: 50vh;
-                resize: none;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .markdown-container {
+            padding: $markdown-margin;
+            gap: calc($markdown-margin / 2);
+
+            .col {
+                border: solid 1px black;
+                height: min-content;
+
+                hr {
+                    margin: 0;
+                }
+
+                h4 {
+                    padding: 10px;
+                    margin: 0;
+                }
+
+                #editor {
+                    width: 100%;
+                    min-height: 60vh;
+                    resize: none;
+                }
             }
         }
     }

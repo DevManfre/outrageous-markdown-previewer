@@ -1,20 +1,21 @@
 import autosize from "autosize";
 import ReactMarkdown from 'react-markdown';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function MarkdownEditor() {
-    const [editorText, setEditorText] = useState(`## This is some markdown
-### Consider making your own
-    
+    const [editorText, setEditorText] = useState(
+        `# This is markdown
+## Consider making your own
+### Create links [Github](https://github.com/devmanfre)
 #### List items
-- George
- Paul
-- Ringo
-- John
-    
-#### Make it **bold** or make it *italic*
-    
-#### Create links [Github](https://github.com/devmanfre)`);
+- First element of the list
+- Make it **bold** or make it *italic*
+- And this is an \`inline code\`.
+
+\`\`\`this_is_a = "block of code"\`\`\`
+> This is a blockquote created with >.
+![](https://img.freepik.com/premium-photo/anthropomorphic-baby-cat-hacker-with-hoodie-dim-light-computer-desk_814249-1959.jpg)`
+    );
 
     function handleEditorChange(event) {
         setEditorText(event.target.value);
