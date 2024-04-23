@@ -1,0 +1,52 @@
+$markdown-margin: 30px;
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+
+    #root {
+        .title {
+            text-align: center;
+
+            h1 {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .markdown-container {
+            padding: $markdown-margin;
+            gap: calc($markdown-margin / 2);
+
+            .col {
+                border: solid 1px black;
+                height: min-content;
+
+                hr {
+                    margin: 0;
+                }
+
+                h4 {
+                    padding: 10px;
+                    margin: 0;
+                }
+
+                #editor {
+                    width: 100%;
+                    min-height: 60vh;
+                    resize: none;
+                }
+            }
+        }
+    }
+}
