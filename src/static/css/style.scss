@@ -23,15 +23,21 @@ $markdown-margin: 30px;
 
         .col {
             border: solid 1px black;
+            height: min-content;
+
+            hr {
+                margin: 0;
+            }
 
             h4{
                 padding: 10px;
                 margin: 0;
             }
 
-            textarea {
+            #editor {
                 width: 100%;
                 min-height: 50vh;
+                resize: none;
             }
         }
     }

@@ -1,5 +1,6 @@
 import autosize from "autosize";
-import { useState } from "react";
+import ReactMarkdown from 'react-markdown';
+import { useEffect, useState } from "react";
 
 function MarkdownEditor() {
     const [editorText, setEditorText] = useState(`## This is some markdown
@@ -14,16 +15,10 @@ function MarkdownEditor() {
 #### Make it **bold** or make it *italic*
     
 #### Create links [Github](https://github.com/devmanfre)`);
-    const [previewText, setPreviewText] = useState('');
 
     function handleEditorChange(event) {
         setEditorText(event.target.value);
         autosize(event.target);
-        setPreviewText(event.target.value);
-    }
-
-    function handlePreviewChange(event) {
-        autosize(event.target)
     }
 
     return (
@@ -34,7 +29,12 @@ function MarkdownEditor() {
             </div>
             <div className="col">
                 <h4><i className="bi bi-file-earmark"> </i>Preview</h4>
-                <textarea id='preview' value={previewText} readOnly onChange={handlePreviewChange} />
+                <hr/>
+                <span id="preview">
+                    <ReactMarkdown>
+                        {editorText}
+                    </ReactMarkdown>
+                </span>
             </div>
         </div>
     );
