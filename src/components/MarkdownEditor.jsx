@@ -13,8 +13,7 @@ function MarkdownEditor() {
 - And this is an \`inline code\`.
 
 \`\`\`this_is_a = "block of code"\`\`\`
-> This is a blockquote created with >.
-![](https://img.freepik.com/premium-photo/anthropomorphic-baby-cat-hacker-with-hoodie-dim-light-computer-desk_814249-1959.jpg)`
+> This is a blockquote created with >.`
     );
 
     function handleEditorChange(event) {
